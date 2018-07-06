@@ -1,0 +1,20 @@
+/*for extra mailing options*/
+.add-ons-box{
+	text-align: center;
+	background-color: white;
+}
+
+
+.home-link{
+	color: teal;
+}
+
+/*for set discount only*/
+.centering-box{
+	margin-top: -25px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: teal;
+	color: white;
+	padding-bottom: 16px;
+}

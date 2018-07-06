@@ -1,0 +1,82 @@
+ 
+
+
+                
+.centered-box{
+    font-size:1em; 
+    text-align:center; 
+    margin:0 auto; 
+    width:100%;
+    padding:25px;
+  
+}
+
+
+.home-link{color: teal;}
+.post-it-link{text-decoration: none; color: teal;}
+.post-it-images{border:0;}
+    
+.buy-link{
+color: white;
+font-size: 1.2em;
+font-weight: bold;	
+text-decoration: none;
+}
+
+.buy-box{
+background-color: black;
+padding:10px;
+    margin: 0 auto;
+    display: block;
+} 
+.buy-box:hover{
+background-color: teal;
+padding:10px;
+ 
+   
+} 
+img{
+    margin: 0 auto;
+    border:1px solid gray;
+}
+
+video{
+    margin: 0 auto;
+    display:block;    
+     }
+
+
+
+
+/*big monitors*/
+/*max wrapper fixed */
+/*products 3 in row*/
+/*other elements 100%*/
+@media only screen and (min-width: 1025px) {
+
+	
+    .buy-box{width:450px;}
+}
+/*laptops*/
+/*products 3 in row*/
+/*other elements 100%*/
+@media only screen and (min-width: 751px) and (max-width: 1024px) {
+	
+	.buy-box{width:450px;}
+	
+}
+
+/*phones*/
+/*all elements 100%*/
+/*hide + show menu*/
+@media only screen and (max-width: 750px) {
+	
+
+    .buy-box{width:100%;}
+
+	video{width:100%;}
+
+
+
+}
+

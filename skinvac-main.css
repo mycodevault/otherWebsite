@@ -1,0 +1,220 @@
+ 
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "trebuchet MS", Helvetica, sans-serif;
+	color: #000000;
+	font-size: 1em;
+	background-image: url('../skinvac-images/background-natural-affordable-effective.png');
+	
+}
+
+.wrapper{ 
+	margin: 0px auto;
+	background-color: white;
+	background-image:url('../skinvac-images/chemical-free-just-add-water.jpg');
+	background-repeat:no-repeat;
+	background-position:right top;
+	border:#000000 1px solid;
+	overflow: hidden;
+}
+
+.post-it {
+	color: white;
+	margin-top:0px;
+	float:left;
+	border-bottom-right-radius:  15px;
+	background-color: #000000;
+	padding: 3px 15px 10px 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+*{box-sizing: border-box;}
+
+
+
+.header{margin-top: 100px;
+		margin-bottom: -20px;}
+
+/*use to wrap collapsible box of left floaters to stop elements below form pushing up*/
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.row.inverted-box{
+background-color:teal; 
+color:white; 
+padding-top:25px; 
+padding-bottom: 25px;
+}
+
+.product-box{
+	width:33.33%;
+	float:left;
+	text-align:center;
+
+}
+
+.product-image{
+margin: 0 auto;
+display: block;
+width:80%;
+}
+
+
+
+/* unvisited link */
+a.product-link:link {
+    color: black;
+ 
+}
+
+/* visited link */
+a.product-link:visited {
+    color: black;
+}
+
+/* mouse over link */
+a.product-link:hover {
+    color: red;
+   font-weight: bold;
+    text-decoration: underline;
+}
+
+/* selected link */
+a.product-link:active {
+    color: black;
+}
+
+.half-split-box{
+	width: 48%;
+	float:left;
+	text-align:center;
+}
+
+.shrinker-image{
+	margin: 0 auto;
+	display: block;
+}
+
+.flag-indent{ padding-left:50px; }
+
+h1,h2,h3,p{padding-left:25px;}
+
+header{
+margin-top: 60px;
+padding-left: 20px;
+
+}
+
+/*Nave bar that hides itself on phone screens*/
+nav ul{
+	background-color: #000000;
+	overflow: hidden;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	transition: max-height ls; /*smooth menu*/
+}
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:inherit;		
+}
+
+nav ul li:hover {
+	background-color: #399077;
+}
+
+.menu-icon{
+	width: 100%;
+	background-color: #222222;
+	text-align: right;
+	box-sizing:  border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: white;
+	display: none;
+
+}
+.header{font-size: 3em;}
+.shrinker-image{
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*For emoticons as list billet points*/
+.enlarger{
+	font-size: 2em;
+	padding-right: 15px;
+}
+
+/*Media queries - change  sizes for different screen size*/
+/*big monitors*/
+/*max wrapper fixed */
+/*products 3 in row*/
+/*other elements 100%*/
+@media only screen and (min-width: 1025px) {
+
+	.wrapper{width:888px;}
+.shrinker-image{width:450px;}
+}
+/*laptops*/
+/*products 3 in row*/
+/*other elements 100%*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	.wrapper{width:100%;}
+
+	.shrinker-image{width:450px;}
+}
+
+/*phones*/
+/*all elements 100%*/
+/*hide + show menu*/
+@media only screen and (max-width: 768px) {
+	
+	.wrapper{width:100%;}
+	.product-box{width:100%;}
+
+   /*menu shrinker*/
+	nav ul{
+		max-height: 0px;
+	}
+
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+	/*menu shrinker*/
+
+	.half-split{width:100%; }
+	.shrinker-image{width:100%;}
+
+
+	
+
+}
+
+
+
